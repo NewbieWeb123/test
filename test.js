@@ -1,3 +1,6 @@
+/* <script src="https://cdn.jsdelivr.net/gh/NewbieWeb123/test@main/test.js"></script> */
+
+
 $(document).ready(function() {
     function thuyetminh() {
           $('.list').empty();
