@@ -126,4 +126,33 @@ $(document).ready(function() {
         }
       });
 
+
+    /* test */
+
+    // Tạo một đối tượng player mới
+var player = DM.player(document.getElementById('player'), {
+    video: 'xjxpjm', // ID của video bạn muốn lấy thời gian
+    width: '100%',
+    height: '100%'
+});
+
+// Tạo một đối tượng audio mới
+var audio = new Audio('audio.mp3'); // URL của file âm thanh
+
+// Khi player đã sẵn sàng, kiểm tra sự thay đổi của thanh thời gian
+player.addEventListener('apiready', function(e) {
+    player.addEventListener('timeupdate', function(e) {
+        if (player.paused) {
+            // Nếu video tạm dừng, tạm dừng âm thanh
+            audio.pause();
+        } else {
+            // Nếu video đang chạy, phát âm thanh
+            audio.play();
+        }
+    });
+});
+
+
+    /*test */
+
 });
