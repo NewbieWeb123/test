@@ -8,8 +8,7 @@ $(document).ready(function() {
                 var htmlData = $(data);
                 var headers = [];
                 var data = [];
-
-
+                
                 htmlData.find('.waffle tbody tr:first-child td').each(function() {
                     headers.push($(this).text());
                 });
