@@ -1,0 +1,89 @@
+.watch-content {
+    width: 1260px;
+    height: auto;
+    min-height: 1080px;
+    display: flex;
+    margin: 80px auto;
+}
+.watch-content__left {
+    width: 930px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.phim-wrap {
+    width: 100%;
+    height: auto;
+}
+.phim-infor {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+.phim-infor>h1 {
+    padding: 15px 0;
+}
+.phim-infor>p {
+    margin: 5px 0;
+}
+.phim-infor>p>span {
+    padding: 0 5px;
+}
+.phim-infor>span.docthem {
+    color: #f25b20;
+    cursor: pointer;
+}
+.phim-infor>p.gt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.phim-infor>p.gt-full {
+    display: block;
+    -webkit-line-clamp: initial;
+    overflow: visible;
+}
+.watch-content__right {
+    width: calc(100% - 930px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px
+}
+.list-tap {
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-tap>b {
+    font-size: 16px;
+    padding: 0 0 10px 0;
+}
+ul.list-tap__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.list-tap__items li {
+    list-style: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    background-color: #373737;
+    border-radius: 5px;
+    margin: 5px;
+}
+ul.list-tap__items li.active {
+    background-color: #00d1d11a;
+}
+ul.list-tap__items li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
