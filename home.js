@@ -49,6 +49,7 @@ $(document).ready(function(){
                     div_item_infor.appendChild(p);
                     a.appendChild(img);
                     a.appendChild(div_item_infor);
+                    li.appendChild(a)
                     var danh_sach_phim = document.getElementById('rank-list__items');
                     danh_sach_phim.appendChild(li)
                 }
