@@ -34,16 +34,16 @@ $(document).ready(function(){
         
                     var li = document.createElement('li');
                     var a = document.createElement('a');
-                    a.href = 'https://bachtieuthuanxemphim.blogspot.com/?index=xem-phim&phim=' + playlist.id;
+                    //a.href = 'https://bachtieuthuanxemphim.blogspot.com/?index=xem-phim&phim=' + playlist.id;
                     var img = document.createElement('img');
-                    img.src = video.thumbnail_url;
+                    //img.src = video.thumbnail_url;
                     var div_item_infor = document.createElement('div');
-                    div_item_infor.className = 'item-infor';
+                    //div_item_infor.className = 'item-infor';
                     var h3 = document.createElement('h3');
-                    h3.innerText = playlist.name; // Sửa ở đây
+                    //h3.innerText = playlist.name; // Sửa ở đây
                     var p = document.createElement('p');
-                    p.className = 'tt';
-                    p.innerText = playlist.description; // Và ở đây
+                    //p.className = 'tt';
+                    //p.innerText = playlist.description; // Và ở đây
         
                     div_item_infor.appendChild(h3);
                     div_item_infor.appendChild(p);
