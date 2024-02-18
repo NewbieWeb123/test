@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     function test_home() {
         // Thay 'YOUR_CHANNEL_ID' bằng ID kênh Dailymotion của bạn
-        var url = 'https://api.dailymotion.com/user/bachtieuthuan/playlists?fields=id,name,videos_total&limit=100';
+        var url = 'https://api.dailymotion.com/user/bachtieuthuan/playlists?fields=id,name,description,videos_total&limit=100';
         
         fetch(url)
             .then(response => response.json())
