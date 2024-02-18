@@ -32,18 +32,19 @@ $(document).ready(function(){
                     var data = await response.json();
                     var video = data.list[0];
         
-                    var li = document.createElement('li');
-                    var a = document.createElement('a');
-                    a.href = 'https://bachtieuthuanxemphim.blogspot.com/?index=xem-phim&phim=' + playlist.id;
-                    var img = document.createElement('img');
-                    img.src = video.thumbnail_url;
-                    var div_item_infor = document.createElement('div');
-                    div_item_infor.className = 'item-infor';
-                    var h3 = document.createElement('h3');
-                    h3.innerText = playlist.name; // Sửa ở đây
+                    
                     var p = document.createElement('p');
                     p.className = 'tt';
                     p.innerText = playlist.description; // Và ở đây
+                     var h3 = document.createElement('h3');
+                    h3.innerText = playlist.name; // Sửa ở đây
+                    var div_item_infor = document.createElement('div');
+                    div_item_infor.className = 'item-infor';
+                     var img = document.createElement('img');
+                    img.src = video.thumbnail_url;
+                     var a = document.createElement('a');
+                    a.href = 'https://bachtieuthuanxemphim.blogspot.com/?index=xem-phim&phim=' + playlist.id;
+                    var li = document.createElement('li');
         
                     div_item_infor.appendChild(h3);
                     div_item_infor.appendChild(p);
